@@ -1,0 +1,16 @@
+{
+  "_comment": "GGUF models fetched from Hugging Face and served by the engine. files: one file, or every shard of a split model (merged into one file for vLLM). tokenizer: the original (non-GGUF) Hugging Face repo, which vLLM needs for GGUF models.",
+  "models": [
+    {
+      "id": "pharo-coder",
+      "repo": "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF",
+      "files": [
+        "qwen2.5-coder-7b-instruct-q4_0-00001-of-00002.gguf",
+        "qwen2.5-coder-7b-instruct-q4_0-00002-of-00002.gguf"
+      ],
+      "tokenizer": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "contextLength": 32768,
+      "default": true
+    }
+  ]
+}

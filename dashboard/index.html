@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pharo Cloud · Admin</title>
+  <link rel="stylesheet" href="/admin/assets/style.css">
+  <script type="module" src="/admin/assets/app.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <svg viewBox="0 0 13 10" aria-hidden="true" shape-rendering="crispEdges">
+        <rect x="6" y="0" width="1" height="1" fill="#fcef7a"/><rect x="5" y="1" width="3" height="1" fill="#ffaf00"/><rect x="6" y="1" width="1" height="1" fill="#fcef7a"/>
+        <rect x="2" y="1" width="1" height="1" fill="#d7d7af"/><rect x="10" y="1" width="1" height="1" fill="#d7d7af"/><rect x="3" y="2" width="1" height="1" fill="#d7d7af"/><rect x="9" y="2" width="1" height="1" fill="#d7d7af"/>
+        <rect x="5" y="2" width="3" height="1" fill="#ff8700"/><rect x="4" y="3" width="5" height="1" fill="#d75f5f"/>
+        <rect x="5" y="4" width="3" height="1" fill="#875f87"/><rect x="5" y="5" width="3" height="1" fill="#5fafd7"/>
+        <rect x="4" y="6" width="5" height="1" fill="#5f5f87"/><rect x="4" y="7" width="5" height="1" fill="#5fafd7"/>
+        <rect x="3" y="8" width="7" height="1" fill="#5f5f87"/><rect x="2" y="9" width="9" height="1" fill="#5fafd7"/>
+      </svg>
+      Pharo Cloud <small>admin</small>
+    </div>
+    <span id="health" class="status muted">Connecting…</span>
+    <span class="spacer"></span>
+    <span id="updated" class="meta"></span>
+    <button id="pause" class="btn" type="button">Pause</button>
+    <button id="theme" class="btn" type="button" aria-label="Toggle theme">Theme</button>
+  </header>
+  <main id="app"></main>
+</body>
+</html>

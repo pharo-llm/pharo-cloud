@@ -1,0 +1,16 @@
+{
+  "name": "pharo-cloud",
+  "version": "0.1.0",
+  "description": "Hosted models for pharo-agent: a gateway (usage limits, metering, admin dashboard) in front of vLLM serving GGUF models from Hugging Face.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "fetch-models": "node src/fetch-models.ts",
+    "test": "node --test tests/*.test.ts",
+    "check": "tsc -p tsconfig.json"
+  }
+}

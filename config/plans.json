@@ -1,29 +1,33 @@
 {
-  "_comment": "PLACEHOLDER LIMITS: the real values are still to be decided. null means unlimited.",
-  "defaultPlan": "free",
+  "_comment": "Usage limits per machine, Claude-style: tokens per rolling session window (5 hours from the first request) and per rolling week. null means unlimited. Tune freely; the gateway reloads this file on restart.",
+  "defaultPlan": "standard",
+  "perIpMultiplier": 3,
   "plans": {
-    "free": {
-      "label": "Free",
-      "requestsPerMinute": 20,
-      "tokensPerDay": 200000,
-      "tokensPerMonth": 3000000,
+    "standard": {
+      "label": "Standard",
+      "sessionHours": 5,
+      "tokensPerSession": 300000,
+      "tokensPerWeek": 3000000,
+      "requestsPerMinute": 30,
       "maxConcurrent": 2,
       "maxTokensPerRequest": 4096
     },
-    "pro": {
-      "label": "Pro",
+    "extended": {
+      "label": "Extended",
+      "sessionHours": 5,
+      "tokensPerSession": 1500000,
+      "tokensPerWeek": 15000000,
       "requestsPerMinute": 120,
-      "tokensPerDay": 2000000,
-      "tokensPerMonth": 40000000,
-      "maxConcurrent": 8,
+      "maxConcurrent": 6,
       "maxTokensPerRequest": 8192
     },
     "unlimited": {
       "label": "Unlimited",
+      "sessionHours": 5,
+      "tokensPerSession": null,
+      "tokensPerWeek": null,
       "requestsPerMinute": null,
-      "tokensPerDay": null,
-      "tokensPerMonth": null,
-      "maxConcurrent": 32,
+      "maxConcurrent": 16,
       "maxTokensPerRequest": null
     }
   }
