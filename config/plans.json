@@ -1,0 +1,30 @@
+{
+  "_comment": "PLACEHOLDER LIMITS: the real values are still to be decided. null means unlimited.",
+  "defaultPlan": "free",
+  "plans": {
+    "free": {
+      "label": "Free",
+      "requestsPerMinute": 20,
+      "tokensPerDay": 200000,
+      "tokensPerMonth": 3000000,
+      "maxConcurrent": 2,
+      "maxTokensPerRequest": 4096
+    },
+    "pro": {
+      "label": "Pro",
+      "requestsPerMinute": 120,
+      "tokensPerDay": 2000000,
+      "tokensPerMonth": 40000000,
+      "maxConcurrent": 8,
+      "maxTokensPerRequest": 8192
+    },
+    "unlimited": {
+      "label": "Unlimited",
+      "requestsPerMinute": null,
+      "tokensPerDay": null,
+      "tokensPerMonth": null,
+      "maxConcurrent": 32,
+      "maxTokensPerRequest": null
+    }
+  }
+}
